@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Tonality\ADSR.h" />
+    <ClInclude Include="src\Tonality\Arithmetic.h" />
+    <ClInclude Include="src\Tonality\AudioFileUtils.h" />
+    <ClInclude Include="src\Tonality\BasicDelay.h" />
+    <ClInclude Include="src\Tonality\BitCrusher.h" />
+    <ClInclude Include="src\Tonality\BLEPOscillator.h" />
+    <ClInclude Include="src\Tonality\BufferFiller.h" />
+    <ClInclude Include="src\Tonality\BufferPlayer.h" />
+    <ClInclude Include="src\Tonality\CombFilter.h" />
+    <ClInclude Include="src\Tonality\CompressorLimiter.h" />
+    <ClInclude Include="src\Tonality\ControlArithmetic.h" />
+    <ClInclude Include="src\Tonality\ControlCallback.h" />
+    <ClInclude Include="src\Tonality\ControlChangeNotifier.h" />
+    <ClInclude Include="src\Tonality\ControlComparison.h" />
+    <ClInclude Include="src\Tonality\ControlConditioner.h" />
+    <ClInclude Include="src\Tonality\ControlCounter.h" />
+    <ClInclude Include="src\Tonality\ControlDbToLinear.h" />
+    <ClInclude Include="src\Tonality\ControlGenerator.h" />
+    <ClInclude Include="src\Tonality\ControlMetro.h" />
+    <ClInclude Include="src\Tonality\ControlMetroDivider.h" />
+    <ClInclude Include="src\Tonality\ControlMidiToFreq.h" />
+    <ClInclude Include="src\Tonality\ControlParameter.h" />
+    <ClInclude Include="src\Tonality\ControlPrinter.h" />
+    <ClInclude Include="src\Tonality\ControlPulse.h" />
+    <ClInclude Include="src\Tonality\ControlRandom.h" />
+    <ClInclude Include="src\Tonality\ControlRecorder.h" />
+    <ClInclude Include="src\Tonality\ControlSnapToScale.h" />
+    <ClInclude Include="src\Tonality\ControlStepper.h" />
+    <ClInclude Include="src\Tonality\ControlSwitcher.h" />
+    <ClInclude Include="src\Tonality\ControlTrigger.h" />
+    <ClInclude Include="src\Tonality\ControlTriggerFilter.h" />
+    <ClInclude Include="src\Tonality\ControlValue.h" />
+    <ClInclude Include="src\Tonality\ControlXYSpeed.h" />
+    <ClInclude Include="src\Tonality\DelayUtils.h" />
+    <ClInclude Include="src\Tonality\DSPUtils.h" />
+    <ClInclude Include="src\Tonality\Effect.h" />
+    <ClInclude Include="src\Tonality\Filters.h" />
+    <ClInclude Include="src\Tonality\FilterUtils.h" />
+    <ClInclude Include="src\Tonality\FixedValue.h" />
+    <ClInclude Include="src\Tonality\Generator.h" />
+    <ClInclude Include="src\Tonality\LFNoise.h" />
+    <ClInclude Include="src\Tonality\Mixer.h" />
+    <ClInclude Include="src\Tonality\MonoToStereoPanner.h" />
+    <ClInclude Include="src\Tonality\Noise.h" />
+    <ClInclude Include="src\Tonality\RampedValue.h" />
+    <ClInclude Include="src\Tonality\RectWave.h" />
+    <ClInclude Include="src\Tonality\Reverb.h" />
+    <ClInclude Include="src\Tonality\RingBuffer.h" />
+    <ClInclude Include="src\Tonality\SampleTable.h" />
+    <ClInclude Include="src\Tonality\SawtoothWave.h" />
+    <ClInclude Include="src\Tonality\SineWave.h" />
+    <ClInclude Include="src\Tonality\SquareWave.h" />
+    <ClInclude Include="src\Tonality\StereoDelay.h" />
+    <ClInclude Include="src\Tonality\Synth.h" />
+    <ClInclude Include="src\Tonality\TableLookupOsc.h" />
+    <ClInclude Include="src\Tonality\TonalityCore.h" />
+    <ClInclude Include="src\Tonality\TonalityFrames.h" />
+    <ClInclude Include="src\Tonality\TriangleWave.h" />
+    <ClInclude Include="Tonality.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Tonality\ADSR.cpp" />
+    <ClCompile Include="src\Tonality\Arthmetic.cpp" />
+    <ClCompile Include="src\Tonality\AudioFileUtils.cpp" />
+    <ClCompile Include="src\Tonality\BasicDelay.cpp" />
+    <ClCompile Include="src\Tonality\BitCrusher.cpp" />
+    <ClCompile Include="src\Tonality\BLEPOscillator.cpp" />
+    <ClCompile Include="src\Tonality\BufferFiller.cpp" />
+    <ClCompile Include="src\Tonality\BufferPlayer.cpp" />
+    <ClCompile Include="src\Tonality\CombFilter.cpp" />
+    <ClCompile Include="src\Tonality\CompressorLimiter.cpp" />
+    <ClCompile Include="src\Tonality\ControlArithmetic.cpp" />
+    <ClCompile Include="src\Tonality\ControlCallback.cpp" />
+    <ClCompile Include="src\Tonality\ControlChangeNotifer.cpp" />
+    <ClCompile Include="src\Tonality\ControlComparison.cpp" />
+    <ClCompile Include="src\Tonality\ControlConditioner.cpp" />
+    <ClCompile Include="src\Tonality\ControlCounter.cpp" />
+    <ClCompile Include="src\Tonality\ControlDbToLinear.cpp" />
+    <ClCompile Include="src\Tonality\ControlGenerator.cpp" />
+    <ClCompile Include="src\Tonality\ControlMetro.cpp" />
+    <ClCompile Include="src\Tonality\ControlMetroDivider.cpp" />
+    <ClCompile Include="src\Tonality\ControlMidiToFreq.cpp" />
+    <ClCompile Include="src\Tonality\ControlParameter.cpp" />
+    <ClCompile Include="src\Tonality\ControlPrinter.cpp" />
+    <ClCompile Include="src\Tonality\ControlPulse.cpp" />
+    <ClCompile Include="src\Tonality\ControlRandom.cpp" />
+    <ClCompile Include="src\Tonality\ControlRecorder.cpp" />
+    <ClCompile Include="src\Tonality\ControlSnapToScale.cpp" />
+    <ClCompile Include="src\Tonality\ControlStepper.cpp" />
+    <ClCompile Include="src\Tonality\ControlSwitcher.cpp" />
+    <ClCompile Include="src\Tonality\ControlTrigger.cpp" />
+    <ClCompile Include="src\Tonality\ControlTriggerFilter.cpp" />
+    <ClCompile Include="src\Tonality\ControlValue.cpp" />
+    <ClCompile Include="src\Tonality\ControlXYSpeed.cpp" />
+    <ClCompile Include="src\Tonality\DelayUtils.cpp" />
+    <ClCompile Include="src\Tonality\DSPUtils.cpp" />
+    <ClCompile Include="src\Tonality\Effect.cpp" />
+    <ClCompile Include="src\Tonality\Filter.cpp" />
+    <ClCompile Include="src\Tonality\FilterUtils.cpp" />
+    <ClCompile Include="src\Tonality\Generator.cpp" />
+    <ClCompile Include="src\Tonality\LFNoise.cpp" />
+    <ClCompile Include="src\Tonality\Mixer.cpp" />
+    <ClCompile Include="src\Tonality\MonoToStereoPanner.cpp" />
+    <ClCompile Include="src\Tonality\Noise.cpp" />
+    <ClCompile Include="src\Tonality\RampedValue.cpp" />
+    <ClCompile Include="src\Tonality\RectWave.cpp" />
+    <ClCompile Include="src\Tonality\Reverb.cpp" />
+    <ClCompile Include="src\Tonality\RingBuffer.cpp" />
+    <ClCompile Include="src\Tonality\SampleTable.cpp" />
+    <ClCompile Include="src\Tonality\SineWave.cpp" />
+    <ClCompile Include="src\Tonality\StereoDelay.cpp" />
+    <ClCompile Include="src\Tonality\Synth.cpp" />
+    <ClCompile Include="src\Tonality\TableLookupOsc.cpp" />
+    <ClCompile Include="src\Tonality\TonalityFrames.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D38E426B-93F4-43D7-A25C-E63698F6BA06}</ProjectGuid>
+    <RootNamespace>tonality</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
