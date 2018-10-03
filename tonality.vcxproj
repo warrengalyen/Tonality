@@ -118,6 +118,7 @@
     <ClCompile Include="src\Tonality\Effect.cpp" />
     <ClCompile Include="src\Tonality\Filter.cpp" />
     <ClCompile Include="src\Tonality\FilterUtils.cpp" />
+    <ClCompile Include="src\Tonality\FixedValue.cpp" />
     <ClCompile Include="src\Tonality\Generator.cpp" />
     <ClCompile Include="src\Tonality\LFNoise.cpp" />
     <ClCompile Include="src\Tonality\Mixer.cpp" />
@@ -128,6 +129,7 @@
     <ClCompile Include="src\Tonality\Reverb.cpp" />
     <ClCompile Include="src\Tonality\RingBuffer.cpp" />
     <ClCompile Include="src\Tonality\SampleTable.cpp" />
+    <ClCompile Include="src\Tonality\SawtoothWave.cpp" />
     <ClCompile Include="src\Tonality\SineWave.cpp" />
     <ClCompile Include="src\Tonality\StereoDelay.cpp" />
     <ClCompile Include="src\Tonality\Synth.cpp" />

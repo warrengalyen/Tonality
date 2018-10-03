@@ -12,75 +12,75 @@
 
  // ------- Core Objects --------
 
-#include "src/TonalityCore.h"
-#include "src/TonalityFrames.h"
-#include "src/SampleTable.h"
-#include "src/FixedValue.h"
-#include "src/Arithmetic.h"
-#include "src/ControlValue.h"
-#include "src/ControlTrigger.h"
-#include "src/ControlParameter.h"
-#include "src/ControlArithmetic.h"
-#include "src/ControlComparison.h"
-#include "src/MonoToStereoPanner.h"
-#include "src/RampedValue.h"
-#include "src/Synth.h"
-#include "src/Mixer.h"
+#include "Tonality/TonalityCore.h"
+#include "Tonality/TonalityFrames.h"
+#include "Tonality/SampleTable.h"
+#include "Tonality/FixedValue.h"
+#include "Tonality/Arithmetic.h"
+#include "Tonality/ControlValue.h"
+#include "Tonality/ControlTrigger.h"
+#include "Tonality/ControlParameter.h"
+#include "Tonality/ControlArithmetic.h"
+#include "Tonality/ControlComparison.h"
+#include "Tonality/MonoToStereoPanner.h"
+#include "Tonality/RampedValue.h"
+#include "Tonality/Synth.h"
+#include "Tonality/Mixer.h"
 
 // -------- Generators ---------
 
 // Oscillators
-#include "src/TableLookupOsc.h"
-#include "src/SineWave.h"
+#include "Tonality/TableLookupOsc.h"
+#include "Tonality/SineWave.h"
 
-#include "src/SawtoothWave.h"   // Aliasing
-#include "src/TriangleWave.h"   // Aliasing
-#include "src/SquareWave.h"     // Aliasing
-#include "src/RectWave.h"       // Aliasing
+#include "Tonality/SawtoothWave.h"   // Aliasing
+#include "Tonality/TriangleWave.h"   // Aliasing
+#include "Tonality/SquareWave.h"     // Aliasing
+#include "Tonality/RectWave.h"       // Aliasing
 
-#include "src/Noise.h"
+#include "Tonality/Noise.h"
 
 // Effects
-#include "src/CombFilter.h"
-#include "src/Filters.h"
-#include "src/StereoDelay.h"
-#include "src/BasicDelay.h"
-#include "src/Reverb.h"
-#include "src/FilterUtils.h"
-#include "src/DelayUtils.h"
-#include "src/Reverb.h"
-#include "src/BitCrusher.h"
+#include "Tonality/CombFilter.h"
+#include "Tonality/Filters.h"
+#include "Tonality/StereoDelay.h"
+#include "Tonality/BasicDelay.h"
+#include "Tonality/Reverb.h"
+#include "Tonality/FilterUtils.h"
+#include "Tonality/DelayUtils.h"
+#include "Tonality/Reverb.h"
+#include "Tonality/BitCrusher.h"
 
 // Utilities
-#include "src/ADSR.h"
-#include "src/RingBuffer.h"
-#include "src/LFNoise.h"
+#include "Tonality/ADSR.h"
+#include "Tonality/RingBuffer.h"
+#include "Tonality/LFNoise.h"
 
 // Non-Oscillator Audio Sources
-#include "src/BufferPlayer.h"
+#include "Tonality/BufferPlayer.h"
 
 
 // ------- Control Generators --------
 
-#include "src/ControlDelay.h"
-#include "src/ControlDbToLinear.h"
-#include "src/ControlFloor.h"
-#include "src/ControlPulse.h"
-#include "src/ControlPrinter.h"
-#include "src/ControlXYSpeed.h"
-#include "src/ControlMetro.h"
-#include "src/ControlMetroDivider.h"
-#include "src/ControlSwitcher.h"
-#include "src/ControlCounter.h"
-#include "src/ControlStepper.h"
-#include "src/ControlRandom.h"
-#include "src/ControlSnapToScale.h"
-#include "src/ControlMidiToFreq.h"
-#include "src/ControlTriggerFilter.h"
-#include "src/ControlCallback.h" // C++11 only
+#include "Tonality/ControlDelay.h"
+#include "Tonality/ControlDbToLinear.h"
+#include "Tonality/ControlFloor.h"
+#include "Tonality/ControlPulse.h"
+#include "Tonality/ControlPrinter.h"
+#include "Tonality/ControlXYSpeed.h"
+#include "Tonality/ControlMetro.h"
+#include "Tonality/ControlMetroDivider.h"
+#include "Tonality/ControlSwitcher.h"
+#include "Tonality/ControlCounter.h"
+#include "Tonality/ControlStepper.h"
+#include "Tonality/ControlRandom.h"
+#include "Tonality/ControlSnapToScale.h"
+#include "Tonality/ControlMidiToFreq.h"
+#include "Tonality/ControlTriggerFilter.h"
+#include "Tonality/ControlCallback.h" // C++11 only
 
 // -------- Util ---------
 
-#include "src/AudioFileUtils.h"
+#include "Tonality/AudioFileUtils.h"
 
 #endif
