@@ -11,9 +11,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Demo Synths\ArbitraryTableLookupDemo.cpp" />
     <ClCompile Include="..\..\Demo Synths\BandlimitedOscillatorTest.cpp" />
     <ClCompile Include="..\..\Demo Synths\CompressorDuckingSynthTest.cpp" />
     <ClCompile Include="..\..\Demo Synths\CompressorSynthTest.cpp" />
+    <ClCompile Include="..\..\Demo Synths\ControlSnapToScaleTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\ControlSwitcherTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\DelayTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\FilteredNoiseSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\FMDroneSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\InputDemoSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\LFNoiseTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\ReverbTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\SimpleStepSeqSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\SineSumSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\StereoDelayTestSynth.cpp" />
+    <ClCompile Include="..\..\Demo Synths\SynthsAsGenerators.cpp" />
+    <ClCompile Include="..\..\Demo Synths\XYSpeed.cpp" />
     <ClCompile Include="..\RTAudio\RtAudio.cpp" />
     <ClCompile Include="..\TonalityStandaloneDemo\main.cpp" />
   </ItemGroup>
