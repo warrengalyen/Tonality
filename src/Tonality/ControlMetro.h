@@ -58,6 +58,10 @@ namespace Tonality {
 			gen()->setBPMGen(ControlValue(bpm));
 		}
 
+		ControlMetro(ControlGenerator bpm) {
+			gen()->setBPMGen(bpm);
+		}
+
 		TONALITY_MAKE_CTRL_GEN_SETTERS(ControlMetro, bpm, setBPMGen);
 	};
 }
