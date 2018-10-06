@@ -129,7 +129,7 @@ namespace Tonality {
 
 					// how many samples remain in current segment
 					unsigned long remainder = (segCounter > segLength) ? 0 : segLength - segCounter;
-					if (remainder < samplesRemaining) {
+					if (remainder <= samplesRemaining) {
 
 						// fill up part of the ramp then switch segment
 
