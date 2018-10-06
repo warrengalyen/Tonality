@@ -385,6 +385,80 @@ namespace Tonality {
 			}
 
 		};
+
+		// ===============================
+		//            BRF 12
+		// =============================== 
+
+		// Butterworth 2-pole BRF
+		class BRF12_ : public Filter_ {
+
+		private:
+
+			Biquad biquad_;
+
+		protected:
+
+			inline void applyFilter(TonalityFloat cutoff, TonalityFloat Q, const SynthesisContext_ & context)
+			{
+
+				// set coefficients
+				TonalityFloat newCoef[5];
+				bltCoef(1.0f, 0.0f, 1.0f, 1.0f / Q, 1, cutoff, newCoef);
+				biquad_.setCoefficients(newCoef);
+
+				// compute
+				biquad_.filter(dryFrames_, outputFrames_);
+			}
+
+		public:
+
+			virtual void setIsStereoInput(bool isStereoInput)
+			{
+				Filter_::setIsStereoInput(isStereoInput);
+				biquad_.setIsStereo(isStereoInput);
+			}
+		};
+
+		// ===============================
+		//            BRF 24
+		// ===============================
+		// Butterwoorth 4-pole BRF
+		class BRF24_ : public Filter_ {
+
+		private:
+
+			Biquad biquads_[2];
+
+		protected:
+
+			inline void applyFilter(TonalityFloat cutoff, TonalityFloat Q, const SynthesisContext_ & context)
+			{
+				// set coefficients
+				TonalityFloat newCoef[5];
+
+				// stage 1
+				bltCoef(1.0f, 0.0f, 1.0f, 0.5412f / Q, 1, cutoff, newCoef);
+				biquads_[0].setCoefficients(newCoef);
+
+				// stage 2
+				bltCoef(1.0f, 0.0f, 1.0f, 1.3066f / Q, 1, cutoff, newCoef);
+				biquads_[1].setCoefficients(newCoef);
+
+				// compute
+				biquads_[0].filter(dryFrames_, outputFrames_);
+				biquads_[1].filter(outputFrames_, outputFrames_);
+			}
+
+		public:
+
+			void setIsStereoInput(bool isStereoInput)
+			{
+				Filter_::setIsStereoInput(isStereoInput);
+				biquads_[0].setIsStereo(isStereoInput);
+				biquads_[1].setIsStereo(isStereoInput);
+			}
+		};
 	}
 
 #pragma mark - Smart Pointers
@@ -430,6 +504,11 @@ namespace Tonality {
 	// BPF 24
 	class BPF24 : public TemplatedFilter<BPF24, Tonality_::BPF24_> {};
 
+	// BRF 12
+	class BRF12 : public TemplatedFilter<BRF12, Tonality_::BRF12_> {};
+
+	// BRF 24
+	class BRF24 : public TemplatedFilter<BRF24, Tonality_::BRF24_> {};
 
 }
 
