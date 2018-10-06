@@ -55,6 +55,13 @@ namespace Tonality {
 			gen()->unlockMutex();
 		}
 
+		void addInput(BufferFiller input1, BufferFiller input2) {
+			gen()->lockMutex();
+			gen()->addInput(input1);
+			gen()->addInput(input2);
+			gen()->unlockMutex();
+		}
+
 		void removeInput(BufferFiller input) {
 			gen()->lockMutex();
 			gen()->removeInput(input);
